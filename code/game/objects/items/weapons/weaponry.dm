@@ -64,13 +64,13 @@
 	flags = CONDUCT
 	slot_flags = SLOT_BELT | SLOT_BACK
 	force = 35
-	throwforce = 50
+	throwforce = 45
 	sharp = 1
 	w_class = WEIGHT_CLASS_NORMAL
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
-	block_chance = 100
-	armour_penetration = 100
+	block_chance = 40
+	armour_penetration = 50
 
 /obj/item/weapon/katana/cursed
 	slot_flags = null
@@ -136,7 +136,7 @@ obj/item/weapon/wirerod/attackby(obj/item/I, mob/user, params)
 	force = 35
 	throwforce = 20 //This is never used on mobs since this has a 100% embed chance.
 	throw_speed = 400
-	embedded_pain_multiplier = 10
+	embedded_pain_multiplier = 2
 	w_class = WEIGHT_CLASS_SMALL
 	embed_chance = 100
 	armour_penetration = 100
