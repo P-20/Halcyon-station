@@ -518,10 +518,10 @@
 	cold_level_1 = 280
 	cold_level_2 = 240
 	cold_level_3 = 200
-	coldmod = 2
+	coldmod = 2.5
 
 	oxy_mod = 0
-	brain_mod = 2
+	brain_mod = 4
 	invis_sight = 1
 	ventcrawler = 2
 	digestion_ratio = 5
