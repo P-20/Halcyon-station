@@ -63,16 +63,14 @@
 	item_state = "katana"
 	flags = CONDUCT
 	slot_flags = SLOT_BELT | SLOT_BACK
-	force = 60
-	throwforce = 90
-	sharp = 10
+	force = 35
+	throwforce = 50
+	sharp = 1
 	w_class = WEIGHT_CLASS_NORMAL
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	block_chance = 100
 	armour_penetration = 100
-	embed_chance = 100
-	embedded_impact_pain_multiplier = 10
 
 /obj/item/weapon/katana/cursed
 	slot_flags = null
