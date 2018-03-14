@@ -81,16 +81,16 @@
 	D.visible_message("<span class='warning'>[A] leg sweeps [D]!</span>", \
 					  	"<span class='userdanger'>[A] leg sweeps you!</span>")
 	playsound(get_turf(A), 'sound/effects/hit_kick.ogg', 50, 1, -1)
-	D.apply_damage(50, BRUTE)
-	D.Weaken(10)
+	D.apply_damage(20, BRUTE)
+	D.Weaken(15)
 	return 1
 
 /datum/martial_art/krav_maga/proc/quick_choke(var/mob/living/carbon/human/A, var/mob/living/carbon/human/D)//is actually lung punch
 	D.visible_message("<span class='warning'>[A] pounds [D] on the chest!</span>", \
 				  	"<span class='userdanger'>[A] slams your chest! You can't breathe!</span>")
 	playsound(get_turf(A), 'sound/effects/hit_punch.ogg', 50, 1, -1)
-	D.AdjustLoseBreath(25)
-	D.adjustOxyLoss(15)
+	D.AdjustLoseBreath(20)
+	D.adjustOxyLoss(20)
 	return 1
 
 /datum/martial_art/krav_maga/proc/neck_chop(var/mob/living/carbon/human/A, var/mob/living/carbon/human/D)
@@ -114,7 +114,7 @@ datum/martial_art/krav_maga/grab_act(var/mob/living/carbon/human/A, var/mob/livi
 	var/picked_hit_type = pick("punches", "kicks")
 	var/bonus_damage = 10
 	if(D.weakened || D.resting || D.lying)
-		bonus_damage += 5
+		bonus_damage += 2.5
 		picked_hit_type = "stomps on"
 	D.apply_damage(bonus_damage, BRUTE)
 	if(picked_hit_type == "kicks" || picked_hit_type == "stomps")
