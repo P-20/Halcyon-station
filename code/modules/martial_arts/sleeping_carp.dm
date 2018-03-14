@@ -8,7 +8,7 @@
 	name = "The Sleeping Carp"
 	deflection_chance = 100
 	help_verb = /mob/living/carbon/human/proc/sleeping_carp_help
-	no_guns = FALSE
+	no_guns = True
 	no_guns_message = "Use of ranged weaponry would bring dishonor to the clan."
 
 /datum/martial_art/the_sleeping_carp/proc/check_streak(var/mob/living/carbon/human/A, var/mob/living/carbon/human/D)
