@@ -65,6 +65,9 @@
 
 /obj/item/organ/internal/heart/gland/heals/activate()
 	//to_chat(owner, "<span class='notice'>your Spirt is Riseing.</span>")
+	owner.adjustBruteLoss(-20)
+	owner.adjustFireLoss(-20)
+	owner.adjustToxLoss(-20)
 	owner.setOxyLoss(0)
 	owner.radiation = 0
 	owner.SetEyeBlind(0)

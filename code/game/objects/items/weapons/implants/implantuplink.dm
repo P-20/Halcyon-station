@@ -7,7 +7,7 @@
 
 /obj/item/weapon/implant/uplink/New()
 	hidden_uplink = new(src)
-	hidden_uplink.uses = 9999
+	hidden_uplink.uses = 50
 	..()
 
 /obj/item/weapon/implant/uplink/implant(mob/source)

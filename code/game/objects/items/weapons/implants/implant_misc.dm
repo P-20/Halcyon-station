@@ -19,7 +19,7 @@
 	desc = "Removes all stuns and knockdowns."
 	icon_state = "adrenal"
 	origin_tech = "materials=2;biotech=4;combat=3;syndicate=4"
-	uses = 3
+	uses = 4
 
 /obj/item/weapon/implant/adrenalin/get_data()
 	var/dat = {"<b>Implant Specifications:</b><BR>
