@@ -505,6 +505,24 @@
 		beakers += B2
 		update_icon()
 
+/obj/item/weapon/grenade/chem_grenade/color
+	payload_name = "uncleaner"
+	desc = "BLAM!-brand foaming space mess-maker. In a special applicator for rapid coloring of wide areas."
+	stage = READY
+
+	New()
+		..()
+		var/obj/item/weapon/reagent_containers/glass/beaker/admin/B1 = new(src)
+		var/obj/item/weapon/reagent_containers/glass/beaker/admin/B2 = new(src)
+
+		B1.reagents.add_reagent("fluorosurfactant", 500)
+		B1.reagents.add_reagent("colorful_reagent", 500)
+		B2.reagents.add_reagent("hair_dye", 500)
+		B2.reagents.add_reagent("water", 500)
+
+		beakers += B1
+		beakers += B2
+		update_icon()
 
 /obj/item/weapon/grenade/chem_grenade/teargas
 	payload_name = "teargas"

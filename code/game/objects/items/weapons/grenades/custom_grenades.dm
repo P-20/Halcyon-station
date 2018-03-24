@@ -84,6 +84,27 @@
 		beakers += B2
 		update_icon()
 
+/obj/item/weapon/grenade/chem_grenade/drugs/admin
+	payload_name = "übermiracle"
+	desc = "It works."
+	stage = 2
+
+	New()
+		..()
+		var/obj/item/weapon/reagent_containers/glass/beaker/admin/B1 = new(src)
+		var/obj/item/weapon/reagent_containers/glass/beaker/admin/B2 = new(src)
+
+		B1.reagents.add_reagent("space_drugs", 300)
+		B1.reagents.add_reagent("lsd", 300)
+		B1.reagents.add_reagent("potassium", 400)
+		B2.reagents.add_reagent("taco", 200)
+		B2.reagents.add_reagent("phosphorus", 400)
+		B2.reagents.add_reagent("sugar", 400)
+
+		beakers += B1
+		beakers += B2
+		update_icon()
+
 /obj/item/weapon/grenade/chem_grenade/ethanol
 	payload_name = "ethanol"
 	desc = "Ach, that hits the spot."
@@ -99,6 +120,22 @@
 		B2.reagents.add_reagent("phosphorus", 25)
 		B2.reagents.add_reagent("sugar", 25)
 		B2.reagents.add_reagent("ethanol", 25)
+
+		beakers += B1
+		beakers += B2
+		update_icon()
+
+/obj/item/weapon/grenade/chem_grenade/clown
+	payload_name = "rainbowlube"
+	stage = 2
+
+	New()
+		..()
+		var/obj/item/weapon/reagent_containers/glass/beaker/admin/B1 = new(src)
+		var/obj/item/weapon/reagent_containers/glass/beaker/admin/B2 = new(src)
+
+		B1.reagents.add_reagent("lube", 1000)
+		B2.reagents.add_reagent("colorful_reagent", 1000)
 
 		beakers += B1
 		beakers += B2

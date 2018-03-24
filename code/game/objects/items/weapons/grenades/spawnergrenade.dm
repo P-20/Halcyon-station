@@ -37,6 +37,13 @@
 	deliveryamt = 5
 	origin_tech = "materials=3;magnets=4;syndicate=3"
 
+/obj/item/weapon/grenade/spawnergrenade/deathtoall
+	name = "singularity grenade"
+	desc = "Please keep away from face."
+	spawner_type = /obj/singularity
+	deliveryamt = 1
+	origin_tech = "materials=3;magnets=8;syndicate=5"
+
 /obj/item/weapon/grenade/spawnergrenade/spesscarp
 	name = "carp delivery grenade"
 	spawner_type = /mob/living/simple_animal/hostile/carp

@@ -14,3 +14,19 @@
 			step(x, pick(NORTH,SOUTH,EAST,WEST))
 
 	qdel(src)
+
+/obj/item/weapon/grenade/confetti/sadness
+	name = "nice grenade"
+	desc = "it's okay"
+	spawner_type = /obj/effect/decal/cleanable/vomit
+
+/obj/item/weapon/grenade/confetti/sadness/prime()
+	var/turf/T = get_turf(src)
+	playsound(T, 'sound/effects/confetti_partywhistle.ogg', 90, 0.1)
+	for(var/i in 1 to 20) //20 vomits. okay.
+		var/atom/movable/x = new spawner_type
+		x.loc = T
+		for(var/j in 1 to rand(1, 4))
+			step(x, pick(NORTH,SOUTH,EAST,WEST))
+
+	qdel(src)
