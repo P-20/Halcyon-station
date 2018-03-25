@@ -45,3 +45,23 @@
 	icon_state = "holymelon"
 	filling_color = "#FFD700"
 	dried_type = null
+
+//Mutatemelon
+/obj/item/seeds/watermelon/mutate
+	name = "pack of mutamelon seeds"
+	desc = "These seeds grow into mutamelon plants."
+	icon_state = "seed-holymelon"
+	species = "mutamelon"
+	plantname = "Mutamelon Vines"
+	product = /obj/item/weapon/reagent_containers/food/snacks/grown/mutamelon
+	mutatelist = list()
+	reagents_add = list("colorful reagent" = 0.12, "mutagen" = 0.2, "saltpetre" = 0.05, "nutriment" = 0.2)
+	rarity = 20
+
+/obj/item/weapon/reagent_containers/food/snacks/grown/mutamelon
+	seed = /obj/item/seeds/watermelon/mutate
+	name = "mutamelon"
+	desc = "This melon is filled with rainbows, but it won't make your vomit colorful."
+	icon_state = "watermelon"
+	filling_color = "#F3D700"
+	dried_type = null
